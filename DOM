@@ -1,0 +1,64 @@
+   1. callback 
+   
+   <script>
+
+        function Y1(arg1, yes, no) {
+            if (arg1 > 2) yes(arg1)
+            else no(arg1)
+        }
+        function callbackyes() {
+            console.log(arg1 * arg1 * arg1);
+        }
+        function callbackno() {
+            console.log(4 - 3 * arg1);
+        }
+        let arg1 = Number(prompt("Введи значение X"));
+        Y1(arg1, callbackyes, callbackno);
+    </script>
+    
+    2. JSON
+    
+     <script>
+
+        let json1 = `{
+"firstName":"Иванов",
+"lastName":"Иван",
+"age": 20,
+"address":{
+"streetAddress":"пл. Гагарина, 1",
+"city":"Ростов-на-Дону",
+"postalCode": 344000 },
+"phoneNumbers": [
+{
+"type1":"home",
+"number1":"634-5625-45-63"
+},
+{
+"type2":"fax",
+"number2":"634-5625-45-64"
+}
+]
+}`
+
+        let obj1 = JSON.parse(json1);
+        console.log(obj1);
+        console.log(obj1.firstName);
+        console.log(obj1.age);
+        console.log(obj1.address.city);
+        console.log(obj1.phoneNumbers);
+        console.log(obj1.phoneNumbers[0].number1);
+        console.log(obj1.phoneNumbers[1].number2);
+        let obj2 = {
+            firstName: "Иванов",
+            age: 20,
+            phoneNumbers: "home", "number1": "634-5625-45-63", "type2": "fax", "number2": "634-5625-45-64",
+            number1: "634-5625-45-63",
+            number2: "634-5625-45-64",
+        }
+        console.log(obj2);
+        let json3 = JSON.stringify(obj2);
+        console.log(json3);
+    </script>
+    
+    
+    
