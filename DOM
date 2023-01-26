@@ -60,5 +60,15 @@
         console.log(json3);
     </script>
     
+    2.2 map and filter
+    
+     <script>
+        const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        console.log(arr);
+        const product = arr.map(num => Math.sqrt(num));
+        console.log(product);
+        const filter1 = arr.filter(num => (num % 3 !== 0));
+        console.log(filter1);
+    </script>
     
     
