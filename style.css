@@ -1,0 +1,23 @@
+.yellow{
+    font-size: 20px;
+    color: rgb(236, 208, 44);
+}
+.bigred{
+    font-size: 30px;
+    color: rgb(153, 224, 201);
+}
+.arial{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.fontsize30{
+    font-size: 30px;
+    color: rgba(206, 29, 132, 0.705);
+    text-shadow: 1px 1px 5px #330808;
+}
+
+.italic{
+    font-style: italic;
+    font-size: 40px;
+}
+
